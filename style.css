@@ -1,55 +1,107 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  padding: 20px;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f2027;
+  color: #fff;
 }
 
 .container {
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  font-size: 2.5rem;
+  color: #00ffe7;
+  text-shadow: 0 0 10px #00ffe7;
+}
+
+.top-3 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.top-card {
+  background: #1b2735;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffe7;
+  flex: 1;
+}
+
+.first { transform: scale(1.15); background: #2e3c4e; }
+
+.circle {
+  background: #00ffe7;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 50%;
+  color: #000;
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.crown {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.score {
+  font-size: 1.5rem;
+  color: gold;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  background: #121212;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 th, td {
-  padding: 12px 15px;
+  padding: 15px;
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #333;
 }
 
 th {
-  background-color: #007bff;
-  color: white;
+  background: #1a1a1a;
+  color: #00ffe7;
 }
 
 input[type="number"] {
   width: 60px;
   padding: 5px;
+  border: none;
+  border-radius: 5px;
   text-align: center;
 }
 
 button {
-  padding: 5px 10px;
-  background-color: #28a745;
-  color: white;
+  background: #00ffe7;
+  color: #000;
   border: none;
+  padding: 5px 10px;
   border-radius: 5px;
+  margin-left: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #218838;
+  background: #00d6c3;
 }
