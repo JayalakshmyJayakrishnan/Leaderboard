@@ -2,24 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Live Leaderboard</title>
+  <title>Event Leaderboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Team Leaderboard</h1>
-    <table id="leaderboard">
+    <h1>🏆 Live Leaderboard</h1>
+
+    <div class="top-3">
+      <div class="top-card second">
+        <div class="circle">2</div>
+        <p class="name" id="team-1-name">Team Beta</p>
+        <p class="score" id="team-1-points">120</p>
+      </div>
+      <div class="top-card first">
+        <div class="crown">👑</div>
+        <div class="circle">1</div>
+        <p class="name" id="team-0-name">Team Alpha</p>
+        <p class="score" id="team-0-points">150</p>
+      </div>
+      <div class="top-card third">
+        <div class="circle">3</div>
+        <p class="name" id="team-2-name">Team Gamma</p>
+        <p class="score" id="team-2-points">110</p>
+      </div>
+    </div>
+
+    <table>
       <thead>
         <tr>
           <th>Rank</th>
-          <th>Team Name</th>
+          <th>Team</th>
           <th>Points</th>
-          <th>Update</th>
+          <th>+ / -</th>
         </tr>
       </thead>
-      <tbody id="leaderboard-body"></tbody>
+      <tbody id="table-body"></tbody>
     </table>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
